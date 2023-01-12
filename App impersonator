@@ -1,0 +1,18 @@
+/* What does the app's SQL look like? */
+CREATE TABLE nets 
+( id INTEGER PRIMARY KEY, name text, points_per_game INTEGER);
+
+INSERT INTO nets VALUES( 1, "irving", 23.2);
+INSERT INTO nets VALUES( 2, "oneale", 6.5);
+INSERT INTO nets VALUES( 3, "durant", 27.3);
+INSERT INTO nets VALUES( 4, "simmons", 15.2);
+INSERT INTO nets VALUES( 5, "claxton", 8.6);
+SELECT * FROM nets;
+
+UPDATE nets SET points_per_game = 24 WHERE id = 1;
+UPDATE nets SET points_per_game = 28 WHERE id = 3;
+UPDATE nets SET points_per_game = 16 WHERE id =4;
+SELECT * FROM nets;
+
+DELETE FROM nets WHERE ID = 1;
+SELECT * FROM nets;
